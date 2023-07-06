@@ -1,4 +1,10 @@
-# Sort-tracking algorithm summarization
+# *Sort-tracking algorithm summarization*
+### Section 1 : I will be summarizing how the algorithm works and how we can do tracking on a video with it. Bellow are the steps the algorithm uses to get to tracking.
+
+-Detection
+-Estimation
+-Target Association
+-Track identify life cycle
 
 ## Detection
 
