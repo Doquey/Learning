@@ -33,7 +33,7 @@ Here, I will describe the association algorithms used for target association in 
 
 I will discuss the initialization process of track identities in the sort-tracking algorithm in this section.
 
-### Section 2: Track maintenance and termination
+### Track maintenance and termination
 
 Here, I will explain how track identities are maintained and terminated throughout the life cycle.
 
