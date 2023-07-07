@@ -22,7 +22,7 @@ Because in each frame we'll need to have a true detection, that will come from t
 To make the estimations in this algorithm we use the Kalman filter. The way the estimations work is as: 
 We pass an detection to the kalman filter, we'll then calculate the derivative of the center points of the bounding box of that detection along with the position of these points, and we'll have a linear velocity model, which consists of the velocity of the point in the image plane(combinate the 2 derivatives and we get the velocity in 2D for that point) and the initial position of the point. With these 2 informations we set up a position function using
 
-                                            ### S = S0 + v0T
+                                              S = S0 + v0T
 this equation will let us predict the position in the plane of the center point in the next frame. This prediction will then be used to make target association in the next step.
 
 ## Target Association
