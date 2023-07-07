@@ -43,4 +43,4 @@ In the next frame we'll again make another detection using YOLO, and we'll recei
 
 ## How to use it
 
-### The code of how to use this algorithm is in the folder of the tutorial. But basically we download a yolo from the torch.hub repository and we use the predefined algorithm the daedalus crew put togather. We just need to pass the detection of the yolo algorithm to the Sort implementation.
+The code of how to use this algorithm is in the folder of the tutorial. But basically we download a yolo from the torch.hub repository and we use the predefined algorithm the daedalus crew put togather. We just need to pass the detection of the yolo algorithm to the Sort implementation.
