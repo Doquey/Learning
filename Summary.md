@@ -46,5 +46,5 @@ In the next frame we'll again make another detection using YOLO, and we'll recei
 The code of how to use this algorithm is in the folder of the tutorial. But basically we download a yolo from the torch.hub repository and we use the predefined algorithm the daedalus crew put togather. We just need to pass the detection of the yolo algorithm to the Sort implementation.
 
 
-kalman filter : https://www.youtube.com/watch?v=bm3cwEP2nUo
-How DeepSORT works : https://www.youtube.com/watch?v=LbyqsoLJu5Q&t=575s
+- kalman filter : https://www.youtube.com/watch?v=bm3cwEP2nUo
+- How DeepSORT works : https://www.youtube.com/watch?v=LbyqsoLJu5Q&t=575s
