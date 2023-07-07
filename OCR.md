@@ -23,3 +23,6 @@ image.
 
 ## Usage
 We have the easyocr library that works very well to make predictions on images. They have an already trained model that we only need to install and run.
+
+- Languages for the easyocr model : https://www.jaided.ai/easyocr/
+- Link to the models directory : https://github.com/JaidedAI/EasyOCR/tree/master
