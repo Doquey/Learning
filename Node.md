@@ -30,9 +30,9 @@ Most things people have already writen modules for. We just need to use them.
 ## Using node.js
 
 Using Npm: 
-npm init
-npm install express  -> Installs locally , need to install per project.
-npm -g install nodemon -> installs globally, can be used in any javascript project.
+- npm init
+- npm install express  -> Installs locally , need to install per project.
+- npm -g install nodemon -> installs globally, can be used in any javascript project.
 
 
 
