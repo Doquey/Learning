@@ -86,3 +86,19 @@ Creating the first endpoint:
 - We need one end point that will include a user in the database. The request we are going to make to this url are of type post.
 - We create the post request using the app from express
 - Then we'll use postman to make the post requests. We need to go inside the postman app, and create a new collection, a new request and place the body of our request there, that is going to be in the schema of the model we created.
+
+Others kinds of requests:
+- PATCH -> update one variable at a time
+- PUT -> Recreate the entire data point
+- Requets with parameters
+- delete -> very self explanatory
+
+Middlewares:
+- Are piece of code that if we define, they will run before everything and no code can run withtout the "next" command being called.
+- These functions are useful for us to know information about the request before letting it go through
+
+Using EJS to transform our json to html:
+- It will be used togather with express
+- There is a syntax very close to django code to be used inside the html template.
+- The way we render and pass the values of the users we get from the database to the html is very similar to django.
+
