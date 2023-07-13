@@ -72,6 +72,17 @@ Creating a server using express:
 - Since in the http example we only used the user entering an url, meaning we only used the GET response, to use it here as well we set the app.get function
 
 Creating a mongodb database:
-- https://www.mongodb.com/atlas/database
+- https://www.mongodb.com/atlas/database  create a cluster here
+- mongoose -> We'll be using this module to connect to the cluster
+- Connecting to the database -> use the mongoose.connect and pass in the link to the database, We also need to create a .env file to hold the enviromental variables so that we don't pass our password and user in the code directly. To use these variables inside .env we need to install the .env module for javascript.
+- After installing and importing the dotenv library, we just need to call it inside the index function dotenv.config and we good to use the env variables in our code.
 
+Creating the schemas for our database:
+- We first create a folder called modules inside src
+- We will then instantiate the schemas for each model we are going to deploy to the database inside this folder.
+- Usually the models are going to be something like this user.model.js and inside of it we'll have a mongoose schema for the model.
 
+Creating the first endpoint:
+- We need one end point that will include a user in the database. The request we are going to make to this url are of type post.
+- We create the post request using the app from express
+- Then we'll use postman to make the post requests. We need to go inside the postman app, and create a new collection, a new request and place the body of our request there, that is going to be in the schema of the model we created.
