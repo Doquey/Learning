@@ -11,3 +11,7 @@ it will then use IOU and max pooling to eliminate the bouding boxes that have a 
 ## How to use it
 
 To use the YOLO algorithm I can just download one of them from the torch.hub repository and run it on my machine.
+
+
+
+Tutorial:https://daedalus-tech.atlassian.net/wiki/spaces/KB/pages/2433384485/YoloV5+-+From+Zero+to+Hero
