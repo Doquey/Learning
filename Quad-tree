@@ -3,3 +3,5 @@
 ### Quad-trees are a tree data-structure very useful to save and keep track of regions of space. Hence the name, quadrants tree.
 ### The root of the tree is the whole 2D area we are looking into. Then we have nodes that are quadrants of that region, and each node
 ### can have up to 4 quadrants of themselves.
+
+# Quad-tree implementation : https://github.com/karimbahgat/Pyqtree/blob/master/README.rst
