@@ -15,3 +15,11 @@ Therefore when a user downloads your code, if its in a docker container they wil
 ## How to use it
 
 The way I can find to learn about docker is to go to the docker tutorial from daedalus: https://daedalus-tech.atlassian.net/wiki/spaces/KB/pages/2413395999/Docker+-+From+Zero+to+Hero
+
+## Copy a file into a runing docker container
+
+        docker cp file  container_id:/directory inside the container
+
+## list all the containers running
+
+        docker ps
