@@ -20,3 +20,5 @@ This is very impratical when we have a lot of libraries and components. Therefor
 To use Cmake to compile our code we will a makelist and include our project name and all the packages and libraries in there, as well as link the libraries that we use to that
 executable.( Here we pass the directory to the libraries(folders) that contain the .h files and this way, whenever we "build" or compile our c++ code using cmake and this makefile,
 it will automatically generate an executable for us that has all the libraries and components linked to the main source code.
+
+After Cmake has created the build files for us (compiled the main source code) then we can install the app and run the executable.
