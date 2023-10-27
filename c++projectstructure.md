@@ -22,3 +22,5 @@ executable.( Here we pass the directory to the libraries(folders) that contain t
 it will automatically generate an executable for us that has all the libraries and components linked to the main source code.
 
 After Cmake has created the build files for us (compiled the main source code) then we can install the app and run the executable.
+
+Actually Cmake will create the build files that are used to link all the libraries that are used in the main app. After we have build all the build files, we need to build the app it self by running: make in the CMakelists.txt directory.
