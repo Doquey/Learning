@@ -31,3 +31,22 @@
                 scp -P 21800 -i ~/.ssh/vast_ai -r root@ssh4.vast.ai:/arquivo/no/remote /destino/no/seu/local
 
 ### The -P 21800 is the port server the local is running.
+
+
+### Using VSCODE to edit files on the ssh machine, first we need to create a host:
+
+We do ctrl + shift + p  e selecionar Remote-ssh connect to host
+
+Then we create the host with some name, for example:
+
+        vast_ai_something
+Then we try to connect to it, it will fail, we click on the try actions, we select the first action which is to change the configuration file, and we place this in there and change for that specific server :
+
+
+        Host vast_ai_server
+        HostName ssh4.vast.ai
+        Port 11696
+        User root
+        IdentityFile ~/.ssh/vast_ai
+
+
