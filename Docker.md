@@ -23,3 +23,5 @@ The way I can find to learn about docker is to go to the docker tutorial from da
 ## list all the containers running
 
         docker ps
+## running a docker container and telling it where to find the camera0(webcam)
+docker run --privileged --device=/dev/video0:/dev/video0 -it your_image_name
