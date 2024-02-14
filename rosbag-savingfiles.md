@@ -30,3 +30,44 @@
 
 
 ## And run our subscriber node to the underlying topic the bag is publishing to.
+
+example:
+
+```
+#!/usr/bin/env python3
+
+import rospy
+from sensor_msgs.msg import PointCloud2
+import sensor_msgs.point_cloud2 as pc2
+import datetime 
+import os
+
+class LidarXYZSaver:
+    def __init__(self):
+        rospy.init_node('lidar_xyz_saver_node', anonymous=True)
+        rospy.Subscriber('/livox/lidar', PointCloud2, self.lidar_callback)
+
+    def lidar_callback(self, msg):
+        points = pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)
+        BASE_DIR = os.getcwd() + "/data/"
+        filename = self.get_filename()
+        with open(BASE_DIR + filename, 'w') as f:
+            for point in points:
+                f.write(f"{point[0]} {point[1]} {point[2]}\n")
+        rospy.loginfo(f"Saved lidar data to {filename}")
+
+    def get_filename(self):
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        file_name = "lidar_data{}.xyz".format(timestamp)
+        return file_name
+
+
+
+if __name__ == '__main__':
+    try:
+        LidarXYZSaver()
+        rospy.spin()
+    except rospy.ROSInterruptException:
+        pass
+
+```
