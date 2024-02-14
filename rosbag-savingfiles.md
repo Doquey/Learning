@@ -48,7 +48,7 @@ class LidarXYZSaver:
         rospy.Subscriber('/livox/lidar', PointCloud2, self.lidar_callback)
 
     def lidar_callback(self, msg):
-        points = pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)
+        points = pc2.read_points(msg, field_names=("x", "y", "z","intensity"), skip_nans=True)
         BASE_DIR = os.getcwd() + "/data/"
         filename = self.get_filename()
         with open(BASE_DIR + filename, 'w') as f:
