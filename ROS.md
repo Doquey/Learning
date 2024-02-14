@@ -117,3 +117,16 @@ we can then look at the details of the message type, by using:
 ## writing a publisher
 
 We roscd to the package. Then we create a folder called "scripts". Inside this folder we'll write our python code. The breakdown of the code is in the tutorial. To set a node as a publisher we import the rospy.Publisher and we build the node using it.
+
+## Rosbag
+We can use this as a file recorder. After we have recorded a file using rosbag, we'll have the working of that node for a specific period of time. Lets say we have a lidar running on a node called lidar/something, then we start recording this node using rosbag record node, then we'll have a .bag file, which can in turn be used to convey the information present in the file to any subscriber node that we wish.
+
+To gather information about a .bag file we can:
+
+
+```
+ rosbag info rua_do_escritorio.bag 
+```
+
+
+
