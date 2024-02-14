@@ -128,5 +128,5 @@ To gather information about a .bag file we can:
  rosbag info rua_do_escritorio.bag 
 ```
 
-
+## Running ROS with python3 : https://www.youtube.com/watch?v=gWksWW5UgS4
 
